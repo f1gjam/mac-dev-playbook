@@ -8,9 +8,9 @@ For installation:
     $ xcode-select --install
     $ sudo easy_install pip
     $ sudo pip install ansible
-    $ mkdir projects && cd projects
-    $ git clone git@github.com:ricbra/mac-dev-playbook.git
-    $ cd mac-dev-playbook
+    $ cd /tmp/
+    $ git clone git@github.com:f1gjam/mac-dev-playbook.git
+    $ cd /tmp/mac-dev-playbook
     $ ansible-galaxy install -r requirements.yml
     
     For Ansible < 2.0

@@ -92,4 +92,5 @@ python_modules_to_install:
   - flake8
   - pylint
   - pytest
+  - requests
   - yapf

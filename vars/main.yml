@@ -1,0 +1,95 @@
+---
+homebrew_install_path: /usr/local/homebrew
+homebrew_installed_packages:
+  - ansible
+  - bash
+  - bash-completion
+  - colordiff
+  - curl
+  - docker
+  - docker-compose
+  - docker-machine-nfs
+  - dockutil
+  - dos2unix
+  - git
+  - git-extras
+  - httpie
+  - imagemagick
+  - nano
+  - python
+  - screen
+  - ssh-copy-id
+  - tig
+  - tmux
+  - tree
+  - wget
+  - zsh
+
+homebrew_taps:
+  - caskroom/cask
+  - caskroom/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - appcleaner
+  - atom
+  - cyberduck
+  - deluge
+  - dropbox
+  - ejector
+  - firefox
+  - google-chrome
+  - google-drive
+  - google-hangouts
+  - intellij-idea-ce
+  - istat-menus
+  - iterm2
+  - java
+  - skype
+  - skypewebplugin
+  - slack
+  - superduper
+  - textual
+  - vagrant
+  - viber
+  - virtualbox
+  - viscosity
+  - vlc
+  - whatsapp
+
+dockitems_to_remove:
+  - Launchpad
+  - Siri
+  - Mail
+  - Safari
+  - Contacts
+  - Calendar
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - iTunes
+  - iBooks
+  - App Store
+  - System Preferences
+
+dockitems_to_persist:
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: Firefox
+    path: "/Applications/Firefox.app"
+    pos: 2
+  - name: Slack
+    path: /Applications/Slack.app
+    pos: 4
+  - name: VirtualBox
+    path: /Applications/VirtualBox.app
+    pos: 5
+
+
+python_modules_to_install:
+  - flake8
+  - pylint
+  - pytest
+  - yapf

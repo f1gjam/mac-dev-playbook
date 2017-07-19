@@ -1,4 +1,13 @@
 ---
+
+dotfiles_repo: git@github.com:f1gjam/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_files:
+  - .bash_profile
+  - .zshrc
+  - .gitignore
+
 homebrew_install_path: /usr/local/homebrew
 homebrew_installed_packages:
   - ansible

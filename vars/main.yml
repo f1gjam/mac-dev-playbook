@@ -38,11 +38,11 @@ homebrew_cask_apps:
   - dropbox
   - ejector
   - firefox
+  - google-backup-and-sync
   - google-chrome
-  - google-drive
   - google-hangouts
   - intellij-idea-ce
-  - istat-menus
+#  - istat-menus
   - iterm2
   - java
   - skype
@@ -77,15 +77,36 @@ dockitems_to_persist:
   - name: Google Chrome
     path: "/Applications/Google Chrome.app"
     pos: 1
-  - name: Firefox
-    path: "/Applications/Firefox.app"
+  - name: IntelliJ IDEA CE
+    path: "/Applications/IntelliJ IDEA CE.app"
     pos: 2
+  - name: Atom
+    path: "/Applications/Atom.app"
+    pos: 3
+  - name: iTerm
+    path: "/Applications/iTerm.app"
+    pos: 4
   - name: Slack
     path: /Applications/Slack.app
-    pos: 4
+    pos: 5
+  - name: Textual
+    path: /Applications/Textual.app
+    pos: 6
+  - name: WhatsApp
+    path: /Applications/WhatsApp.app
+    pos: 7
+  - name: Skype
+    path: /Applications/Skype.app
+    pos: 8
+  - name: Viber
+    path: /Applications/Viber.app
+    pos: 9
   - name: VirtualBox
     path: /Applications/VirtualBox.app
-    pos: 5
+    pos: 10
+  - name: Cyberduck
+    path: /Applications/Cyberduck.app
+    pos: 11
 
 
 python_modules_to_install:

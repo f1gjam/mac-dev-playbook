@@ -101,15 +101,21 @@ dockitems_to_persist:
   - name: Viber
     path: /Applications/Viber.app
     pos: 9
+  - name: Messages
+    path: /Applications/Messages.app
+    pos: 10
+  - name: FaceTime
+    path: /Applications/FaceTime.app
+    pos: 11
   - name: VirtualBox
     path: /Applications/VirtualBox.app
-    pos: 10
+    pos: 12
   - name: Cyberduck
     path: /Applications/Cyberduck.app
-    pos: 11
+    pos: 13
 
 
-python_modules_to_install:
+pip_packages:
   - flake8
   - pylint
   - pytest

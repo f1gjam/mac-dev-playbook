@@ -23,7 +23,7 @@
       Host github.com
           AddKeysToAgent yes
           UseKeychain yes
-          IdentityFile ~/.ssh/f1gjam-github-privat  shell: |
+          IdentityFile ~/.ssh/f1gjam-github-private
   tags: ssh_config
 
 - name: Create git config file

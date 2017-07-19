@@ -16,9 +16,11 @@
   tags: opt2
   
 - name: Create SSH config file
-  shell: |
-    echo 'Host github.com
-      AddKeysToAgent yes
-      UseKeychain yes
-      IdentityFile ~/.ssh/f1gjam-github-private' > ~/.ssh/config
+  blockinfile:
+    path: ~/.ssh/config
+    block: |
+      Host github.com
+          AddKeysToAgent yes
+          UseKeychain yes
+          IdentityFile ~/.ssh/f1gjam-github-privat  shell: |
   tags: ssh_config

@@ -1,19 +1,24 @@
 ---
 - name: Ensure /opt/kashif folder exists
+  become: true
+  become_method: sudo 
   file:
     path: /opt/kashif
     state: directory
     mode: 0755
     owner: kashif
+  tags: opt1
 
 - name: Ensure /opt is viewable in Finder
   shell: SetFile  -a  v  /opt
   become: true
   become_method: sudo 
+  tags: opt2
   
 - name: Create SSH config file
   shell: |
     echo 'Host github.com
-		AddKeysToAgent yes
-		UseKeychain yes
-		IdentityFile ~/.ssh/f1gjam-github-private' >> ~/.ssh/config
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/f1gjam-github-private' > ~/.ssh/config
+  tags: ssh_config

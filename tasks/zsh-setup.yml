@@ -5,10 +5,18 @@
   tags: zsh
 
 - name: Install ohmyzsh
-  shell: sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-  become: true
-  become_method: sudo
+  get_url: 
+    url: https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh 
+    dest: /tmp/zsh-installer.sh
+    mode: 0755
   tags: zsh
+
+- name: Execute the zsh-installer.sh
+  shell: ./zsh-installer.sh
+  args:
+    chdir: /tmp
+  become: true
+  tags: zsh 
 
 - name: Ensure powerline zsh theme repository is cloned locally.
   git:
@@ -19,7 +27,9 @@
   tags: zsh
 
 - name: Install Powerline Theme
-  shell: "{{ powerline_repo_local_destination }}/install_in_omz.sh"
+  shell: ./install_in_omz.sh  
+  args:
+    chdir: "{{ powerline_repo_local_destination }}"
   tags: zsh
 
 - name: Ensure powerline fonts repository is cloned locally.
@@ -31,6 +41,8 @@
   tags: zsh
 
 - name: Install fonts for powerline theme 
-  shell: "{{ fonts_repo_local_destination }}/install.sh"
+  shell: ./install.sh
+  args:
+    chdir: "{{ fonts_repo_local_destination }}"
   tags: zsh
 

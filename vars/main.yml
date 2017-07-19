@@ -6,7 +6,7 @@ powerline_repo: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git
 powerline_repo_local_destination: /tmp/oh-my-zsh-powerline-theme
 fonts_repo: https://github.com/powerline/fonts.git
 fonts_repo_local_destination: /tmp/fonts
-
+ohmyzsh_repo: https://github.com/robbyrussell/oh-my-zsh.git
 
 
 dotfiles_repo: git@github.com:f1gjam/dotfiles.git 

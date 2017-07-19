@@ -13,3 +13,4 @@
   tasks:
     - include: tasks/ansible-setup.yml
     - include: tasks/extra-packages.yml
+    - include: tasks/initial_setup_tasks.yml

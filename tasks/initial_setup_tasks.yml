@@ -17,6 +17,7 @@
   
 - name: Create SSH config file
   blockinfile:
+    create: yes
     path: ~/.ssh/config
     block: |
       Host github.com
@@ -24,3 +25,26 @@
           UseKeychain yes
           IdentityFile ~/.ssh/f1gjam-github-privat  shell: |
   tags: ssh_config
+
+- name: Create git config file
+  blockinfile:
+    create: yes
+    path: ~/.gitconfig
+    block: |
+      [user]
+        name = Kashif Ali
+        email = kashif@unixcraft.uk
+      [core]
+        editor = nano
+        excludesfile = /Users/kashif/.gitignore
+      [color]
+        ui = auto
+  tags: git_config
+
+- name: Create nanorc config file
+  blockinfile:
+    create: yes
+    path: ~/.nanorc
+    block: |
+      include /usr/local/share/nano/*.nanorc
+  tags: nanorc

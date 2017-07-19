@@ -2,10 +2,8 @@
 
 - name: Ensure /Users/kashif/dotfiles/.macos is executable
   become: true
-  become_method: sudo
   file:
     path: /Users/kashif/dotfiles/.macos
-    state: file
     mode: 0755
     owner: kashif
   tags: macos
@@ -15,4 +13,4 @@
   become: true
   shell: "{{ osx_script }}"
   changed_when: false
-  tags: osx
+  tags: macos

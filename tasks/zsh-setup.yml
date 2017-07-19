@@ -1,0 +1,36 @@
+---
+
+- name: Set zsh as shell
+  shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
+  tags: zsh
+
+- name: Install ohmyzsh
+  shell: sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+  become: true
+  become_method: sudo
+  tags: zsh
+
+- name: Ensure powerline zsh theme repository is cloned locally.
+  git:
+    repo: "{{ powerline_repo }}"
+    dest: "{{ powerline_repo_local_destination }}"
+    accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+  become: no
+  tags: zsh
+
+- name: Install Powerline Theme
+  shell: "{{ powerline_repo_local_destination }}/install_in_omz.sh"
+  tags: zsh
+
+- name: Ensure powerline fonts repository is cloned locally.
+  git:
+    repo: "{{ fonts_repo }}"
+    dest: "{{ fonts_repo_local_destination }}"
+    accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+  become: no
+  tags: zsh
+
+- name: Install fonts for powerline theme 
+  shell: "{{ fonts_repo_local_destination }}/install.sh"
+  tags: zsh
+

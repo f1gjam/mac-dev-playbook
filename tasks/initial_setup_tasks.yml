@@ -81,7 +81,4 @@
   tags: wgetrc
 
 
-- name: Set zsh as shell
-  shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
-
 

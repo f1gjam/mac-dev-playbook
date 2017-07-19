@@ -9,6 +9,7 @@ fonts_repo_local_destination: /tmp/fonts
 
 
 
+dotfiles_repo: https://github.com/f1gjam/dotfiles.git 
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_home: ~/

@@ -9,6 +9,16 @@
     owner: kashif
   tags: opt1
 
+- name: Ensure /Users/kashif/dotfiles/.macos is executable
+  become: true
+  become_method: sudo 
+  file:
+    path: /Users/kashif/dotfiles/.macos
+    state: file
+    mode: 0755
+    owner: kashif
+  tags: macos
+
 - name: Ensure /opt is viewable in Finder
   shell: SetFile  -a  v  /opt
   become: true

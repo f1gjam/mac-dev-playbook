@@ -1,0 +1,48 @@
+---
+- name: Ensure dotfiles repository is cloned locally.
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_repo_local_destination }}"
+    accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+  become: no
+
+- name: Ensure all configured dotfiles are links.
+  shell: "ls -F {{ dotfiles_home }}/{{ item }}"
+  register: existing_dotfile_info
+  failed_when: false
+  check_mode: no
+  changed_when: false
+  with_items: "{{ dotfiles_files }}"
+
+- name: Remove existing dotfiles file if a replacement is being linked.
+  file:
+    path: "{{ dotfiles_home }}/{{ dotfiles_files[item.0] }}"
+    state: absent
+  when: "'@' not in item.1.stdout"
+  with_indexed_items: "{{ existing_dotfile_info.results }}"
+
+- name: Link dotfiles into home folder.
+  file:
+    src: "{{ dotfiles_repo_local_destination }}/{{ item }}"
+    dest: "{{ dotfiles_home }}/{{ item }}"
+    state: link
+  become: no
+  with_items: "{{ dotfiles_files }}"
+
+
+- name: Set zsh as shell
+  shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
+
+- name: Remove all crap from Dock
+  shell: dockutil --remove '{{ item }}'
+  ignore_errors: true
+  with_items: "{{ dockitems_to_remove  }}"
+
+- name: Check if items in dock exist
+  shell: dockutil --find '{{ item.name }}' || dockutil --add '{{ item.path }}'
+  with_items: "{{ dockitems_to_persist }}"
+
+- name: Fix order
+  shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
+  with_items: "{{ dockitems_to_persist }}"
+

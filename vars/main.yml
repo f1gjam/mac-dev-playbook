@@ -41,6 +41,7 @@ homebrew_installed_packages:
   - ssh-copy-id
   - tig
   - tmux
+  - transmission-remote-gui
   - tree
   - wget
   - zsh

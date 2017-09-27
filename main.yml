@@ -14,6 +14,5 @@
     - include: tasks/extra-packages.yml
     - include: tasks/initial_setup_tasks.yml
     - include: tasks/dock_setup.yml
-    - include: tasks/zsh-setup.yml
     - include: tasks/dotfiles.yml
     - include: tasks/osx.yml

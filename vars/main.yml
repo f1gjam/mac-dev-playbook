@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - git-extras
   - httpie
   - imagemagick
+  - micro
   - nano
   - python
   - screen

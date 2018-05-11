@@ -17,7 +17,7 @@ For installation:
     $ ansible-playbook -i inventory --ask-sudo-password main.yml 
     For Ansible >= 2.0 use 
     $ ansible-playbook -i inventory --ask-become-pass main.yml 
-    
-    $ cd ~/dotfiles
-    $ bin/install
-    $ bin/setup_osx
+
+The dot files will be pulled down from the dot files repo. 
+
+**Note:** Some dot file are created from scratch within the ansible tasks.

@@ -6,7 +6,7 @@
     path: /opt/kashif
     state: directory
     mode: 0755
-    owner: kashif
+    owner: kali
   tags: opt1
 
 - name: Ensure /opt is viewable in Finder

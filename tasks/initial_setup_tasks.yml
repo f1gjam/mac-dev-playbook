@@ -36,7 +36,7 @@
         email = kashif@unixcraft.uk
       [core]
         editor = nano
-        excludesfile = /Users/kashif/.gitignore
+        excludesfile = ~/.gitignore
       [color]
         ui = auto
   tags: git_config

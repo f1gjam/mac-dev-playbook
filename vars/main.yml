@@ -1,5 +1,5 @@
 ---
-osx_script: "/Users/kashif/dotfiles/.macos"
+osx_script: "/Users/kali/dotfiles/.macos"
 
 
 #powerline_repo: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git
@@ -15,6 +15,7 @@ dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_home: ~/
 dotfiles_files:
   - .bash_profile
+  - .bashrc
   - .gitignore
   - .macos
 
@@ -36,7 +37,7 @@ homebrew_installed_packages:
   - imagemagick
   - micro
   - nano
-  - python
+  - python3
   - screen
   - ssh-copy-id
   - tig
@@ -50,25 +51,26 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
   - appcleaner
   - atom
   - cyberduck
-  - deluge
   - firefox
   - google-backup-and-sync
   - google-chrome
   - google-hangouts
-  - intellij-idea-ce
+  - jetbrains-toolbox
   - iterm2
   - java
+  - microsoft-remote-desktop-beta
   - skype
   - skypewebplugin
   - slack
-  - superduper
+  - teamviewer
   - textual
   - vagrant
   - viber
-  - virtualbox
+#  - virtualbox
   - viscosity
   - vlc
   - whatsapp

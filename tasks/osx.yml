@@ -1,9 +1,9 @@
 ---
 
-- name: Ensure /Users/kashif/dotfiles/.macos is executable
+- name: Ensure /Users/<USERNAME>/dotfiles/.macos is executable
   become: true
   file:
-    path: /Users/kashif/dotfiles/.macos
+    path: ~/dotfiles/.macos
     mode: 0755
     owner: kashif
   tags: macos

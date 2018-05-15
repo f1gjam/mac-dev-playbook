@@ -1,0 +1,13 @@
+---
+- name: Ensure bash_it repository is cloned locally.
+  git:
+    repo: "{{ bash_it_repo }}"
+    dest: "{{ bash_it_repo_local_destination }}"
+    accept_hostkey: "{{ bash_it_repo_accept_hostkey }}"
+  become: no
+  tags: bash_it
+
+- name: Install Bash_IT.
+  shell: "{{ bash_it_repo_local_destination }}/install.sh --no-modify-config"
+  tags: bash_it
+

@@ -16,3 +16,4 @@
     - include: tasks/dock_setup.yml
     - include: tasks/dotfiles.yml
     - include: tasks/osx.yml
+    - include: tasks/bash_it.yml

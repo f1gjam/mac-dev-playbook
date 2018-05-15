@@ -2,12 +2,9 @@
 osx_script: "/Users/kali/dotfiles/.macos"
 
 
-#powerline_repo: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git
-#powerline_repo_local_destination: /tmp/oh-my-zsh-powerline-theme
-fonts_repo: https://github.com/powerline/fonts.git
-fonts_repo_local_destination: /tmp/fonts
-#ohmyzsh_repo: https://github.com/robbyrussell/oh-my-zsh.git
-
+bash_it_repo: https://github.com/Bash-it/bash-it.git
+bash_it_repo_accept_hostkey: yes
+bash_it_repo_local_destination: ~/.bash_it
 
 dotfiles_repo: git@github.com:f1gjam/dotfiles.git 
 dotfiles_repo_accept_hostkey: yes

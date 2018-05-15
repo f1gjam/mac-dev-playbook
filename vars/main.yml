@@ -48,6 +48,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - caskroom/cask
   - caskroom/versions
+  - caskroom/fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -56,6 +57,7 @@ homebrew_cask_apps:
   - atom
   - cyberduck
   - firefox
+  - font-roboto-mono-for-powerline
   - google-backup-and-sync
   - google-chrome
   - google-hangouts

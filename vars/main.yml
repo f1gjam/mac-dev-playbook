@@ -46,6 +46,7 @@ homebrew_taps:
   - caskroom/cask
   - caskroom/versions
   - caskroom/fonts
+  - caskroom/versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -61,6 +62,7 @@ homebrew_cask_apps:
   - jetbrains-toolbox
   - iterm2
   - java
+  - java8
   - microsoft-remote-desktop-beta
   - skype
   - skypewebplugin

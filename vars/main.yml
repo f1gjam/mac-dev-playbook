@@ -61,7 +61,6 @@ homebrew_cask_apps:
   - google-hangouts
   - jetbrains-toolbox
   - iterm2
-  - java
   - java8
   - microsoft-remote-desktop-beta
   - skype

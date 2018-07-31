@@ -20,7 +20,7 @@ homebrew_install_path: /usr/local/homebrew
 homebrew_installed_packages:
   - ansible
   - bash
-  - bash-completion
+  - bash-completion2
   - colordiff
   - curl
   - docker

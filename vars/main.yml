@@ -44,9 +44,8 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - caskroom/cask
-  - caskroom/versions
-  - caskroom/fonts
-  - caskroom/versions
+  - homebrew/cask-versions
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:

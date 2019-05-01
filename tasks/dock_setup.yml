@@ -1,6 +1,6 @@
 ---
-- name: Set zsh as shell
-  shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
+- name: Set bash as shell (Brew /usr/local/bin/bash)
+  shell: defaults write com.apple.Terminal 'Shell' -string '/usr/local/bin/bash'
 
 - name: Remove all crap from Dock
   shell: dockutil --remove '{{ item }}'

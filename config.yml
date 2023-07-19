@@ -64,6 +64,7 @@ sudoers_custom_config: |
 
 
 dotfiles_repo: git@github.com:f1gjam/dotfiles.git 
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_home: ~/

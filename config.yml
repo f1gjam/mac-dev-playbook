@@ -1,0 +1,161 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+
+#Dont need to configure terminal leave default for now
+configure_terminal: false
+
+configure_osx: false
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - Siri
+  - Mail
+  - Safari
+  - Contacts
+  - Calendar
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - iTunes
+  - iBooks
+  - 'App Store'
+  - TV
+  - Podcasts
+  - System Preferences
+
+dockitems_persist:
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+#  - name: IntelliJ IDEA CE
+#    path: "/Applications/IntelliJ IDEA CE.app"
+#    pos: 2
+  - name: iTerm
+    path: "/Applications/iTerm.app"
+    pos: 4
+  - name: Slack
+    path: /Applications/Slack.app
+    pos: 5
+  - name: WhatsApp
+    path: /Applications/WhatsApp.app
+    pos: 7
+  - name: Telegram
+    path: /Applications/Telegram.app
+    pos: 8
+  - name: Messages
+    path: /Applications/Messages.app
+    pos: 9
+  - name: FaceTime
+    path: /Applications/FaceTime.app
+    pos: 11
+
+configure_sudoers: true
+#sudoers_custom_config: ''
+sudoers_custom_config: |
+  # Allow users in admin group to use sudo with no password.
+  %admin ALL=(ALL) NOPASSWD: ALL
+
+
+
+
+dotfiles_repo: git@github.com:f1gjam/dotfiles.git 
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_home: ~/
+dotfiles_files:
+  - .gitconfig
+  - .gitignore
+  - .nanorc
+  - .osx
+
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - bash
+  - bash-completion2
+  - colordiff
+  - curl
+  - dockutil
+  - dos2unix
+  - git
+  - git-extras
+  - go
+  - httpie
+  - iperf
+  - nano
+  - python3
+  - go
+  - screen
+  - ssh-copy-id
+  - tig
+  - tmux
+  - tree
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - appcleaner
+  - cyberduck
+  - firefox
+  - google-drive
+  - google-chrome
+  - iterm2
+  - jetbrains-toolbox
+  - microsoft-remote-desktop
+  - slack
+  - telegram
+  - visual-studio-code
+  - vlc
+  - whatsapp
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+
+pip_packages:
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+  - name: pylint
+    state: latest
+  - name: pytest
+    state: latest 
+  - name: pyinstaller
+    state: latest 
+  - name: requests
+    state: latest 
+  - name: yapf
+    state: latest 
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
+

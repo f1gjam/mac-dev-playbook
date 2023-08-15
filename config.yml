@@ -111,6 +111,7 @@ homebrew_cask_apps:
   - appcleaner
   - cyberduck
   - firefox
+  - flutter
   - google-drive
   - google-chrome
   - iterm2

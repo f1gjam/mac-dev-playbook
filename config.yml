@@ -91,6 +91,7 @@ homebrew_installed_packages:
   - go
   - httpie
   - iperf
+  - mongosh 
   - nano
   - nanorc
   - python3

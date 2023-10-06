@@ -66,7 +66,7 @@ sudoers_custom_config: |
 dotfiles_repo: git@github.com:f1gjam/dotfiles.git
 dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_repo_local_destination: ~/github/dotfiles
 dotfiles_home: ~/
 dotfiles_files:
   - .bash_profile
@@ -75,7 +75,7 @@ dotfiles_files:
   - .gitignore
   - .nanorc
   - .osx
-
+  - .ssh/
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.

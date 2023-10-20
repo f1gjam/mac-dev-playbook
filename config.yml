@@ -75,7 +75,7 @@ dotfiles_files:
   - .gitignore
   - .nanorc
   - .osx
-  - .ssh/
+#  - .ssh
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.

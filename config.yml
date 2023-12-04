@@ -79,6 +79,8 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+brew install awscli
+  - awscli
   - bash
   - bash-completion@2
   - colordiff

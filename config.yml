@@ -95,7 +95,7 @@ homebrew_installed_packages:
   - nano
   - nanorc
   - python3
-  - go
+  - saml2aws
   - screen
   - ssh-copy-id
   - tig

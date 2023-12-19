@@ -104,6 +104,7 @@ brew install awscli
   - tmux
   - tree
   - wget
+  - yarn
 
 homebrew_taps:
   - homebrew/core

@@ -62,25 +62,26 @@ sudoers_custom_config: |
 
 
 
+ # Managed via GNU STOW Now
 
-dotfiles_repo: git@github.com:f1gjam/dotfiles.git
-dotfiles_repo_version: main
-dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/github/dotfiles
-dotfiles_home: ~/
-dotfiles_files:
-  - .bash_profile
-  - .bashrc
-  - .gitconfig
-  - .gitignore
-  - .nanorc
-  - .osx
+ #dotfiles_repo: git@github.com:f1gjam/dotfiles.git
+ #dotfiles_repo_version: main
+ #dotfiles_repo_accept_hostkey: yes
+ #dotfiles_repo_local_destination: ~/github/dotfiles
+ #dotfiles_home: ~/
+ #dotfiles_files:
+ #  - .bash_profile
+ # - .bashrc
+ # - .gitconfig
+ # - .gitignore
+ # - .nanorc
+ # - .osx
 #  - .ssh
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
 brew install awscli
-  - awscli
+  - alacritty
   - bash
   - bash-completion@2
   - colordiff
@@ -100,6 +101,7 @@ brew install awscli
   - saml2aws
   - screen
   - ssh-copy-id
+  - stow
   - tig
   - tmux
   - tree
@@ -109,6 +111,7 @@ brew install awscli
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -127,6 +130,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - vlc
   - whatsapp
+
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

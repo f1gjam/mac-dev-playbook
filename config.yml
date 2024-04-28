@@ -107,6 +107,7 @@ brew install awscli
   - tree
   - wget
   - yarn
+  - zellij
 
 homebrew_taps:
   - homebrew/core

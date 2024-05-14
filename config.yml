@@ -35,12 +35,12 @@ dockitems_persist:
 #  - name: IntelliJ IDEA CE
 #    path: "/Applications/IntelliJ IDEA CE.app"
 #    pos: 2
-  - name: iTerm
-    path: "/Applications/iTerm.app"
-    pos: 4
-  - name: Slack
-    path: /Applications/Slack.app
-    pos: 5
+#  - name: iTerm
+#    path: "/Applications/iTerm.app"
+#    pos: 4
+#  - name: Slack
+#    path: /Applications/Slack.app
+#    pos: 5
   - name: WhatsApp
     path: /Applications/WhatsApp.app
     pos: 7

@@ -88,6 +88,7 @@ brew install awscli
   - curl
   - dockutil
   - dos2unix
+  - ffmpeg
   - ghostty
   - git
   - git-extras
@@ -104,7 +105,6 @@ brew install awscli
   - starship
   - stow
   - tig
-  - tmux
   - tree
   - wget
   - yarn
@@ -121,10 +121,8 @@ homebrew_cask_apps:
   - appcleaner
   - cyberduck
   - firefox
-  - flutter
   - google-drive
   - google-chrome
-  - iterm2
   - jetbrains-toolbox
   - microsoft-remote-desktop
   - slack

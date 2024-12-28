@@ -81,14 +81,14 @@ sudoers_custom_config: |
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
 brew install awscli
-  - alacritty
+  - atac
   - bash
   - bash-completion@2
   - colordiff
   - curl
-  - dart-sdk
   - dockutil
   - dos2unix
+  - ghostty
   - git
   - git-extras
   - go
@@ -97,10 +97,11 @@ brew install awscli
   - mongosh 
   - nano
   - nanorc
+  - okta-aws-cli
   - python3
-  - saml2aws
   - screen
   - ssh-copy-id
+  - starship
   - stow
   - tig
   - tmux

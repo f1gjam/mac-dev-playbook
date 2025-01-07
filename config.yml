@@ -95,7 +95,8 @@ brew install awscli
   - go
   - httpie
   - iperf
-  - mongosh 
+  - mongosh
+  - mongodb-compass
   - nano
   - nanorc
   - okta-aws-cli

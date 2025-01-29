@@ -101,12 +101,14 @@ brew install awscli
   - nanorc
   - okta-aws-cli
   - python3
+  - ruff
   - screen
   - ssh-copy-id
   - starship
   - stow
   - tig
   - tree
+  - uv  
   - wget
   - yarn
   - zellij
@@ -126,7 +128,6 @@ homebrew_cask_apps:
   - google-chrome
   - jetbrains-toolbox
   - microsoft-remote-desktop
-  - slack
   - telegram
   - visual-studio-code
   - vlc
@@ -160,16 +161,6 @@ pip_packages:
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
-  - name: pylint
-    state: latest
-  - name: pytest
-    state: latest 
-  - name: pyinstaller
-    state: latest 
-  - name: requests
-    state: latest 
-  - name: yapf
-    state: latest 
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

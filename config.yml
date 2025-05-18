@@ -94,6 +94,7 @@ brew install awscli
   - git-extras
   - go
   - httpie
+  - hl
   - iperf
   - mongosh
   - mongodb-compass

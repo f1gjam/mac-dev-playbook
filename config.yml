@@ -128,7 +128,7 @@ homebrew_cask_apps:
   - google-drive
   - google-chrome
   - jetbrains-toolbox
-  - microsoft-remote-desktop
+  - windows-app
   - telegram
   - visual-studio-code
   - vlc
